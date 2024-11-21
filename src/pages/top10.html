@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Top10 primeiros Pokémons | PokeAPI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/top10.js" defer></script>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ffffff, rgb(2, 196, 255), rgb(0, 41, 95)); /* Removido espaço extra */
+        background-size: 300% 300%;
+        animation: gradientAnimation 10s ease-in-out infinite;
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Primeira Geração Pokémon</h1>
+        <div id="pokemonList" class="pokemon-list"></div>
+    </div>
+</body>
+
+</html>

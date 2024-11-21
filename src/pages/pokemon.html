@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex | PokeAPI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/pokemon.js" defer></script>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff0000, rgb(0, 0, 0), rgb(0, 41, 95));
+        background-size: 300% 300%;
+        animation: gradientAnimation 10s ease-in infinite;
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>Buscar Pokémon</h1>
+        <input type="text" id="pokemonName" placeholder="Digite o nome ou ID do Pokémon">
+        <button onclick="fetchPokemon()">Buscar</button>
+
+        <p id="loadingMessage" style="display: none;">Carregando...</p>
+        <div id="errorMessage" class="erro"></div>
+
+        <div id="pokemon-info" class="pokemon-info" style="display: none;">
+            <h1 id="pokemonTitle"></h1>
+            <img src="" alt="" id="pokemonImage">
+            <p><strong>Altura:</strong> <span id="pokemonHeight"></span></p>
+            <p><strong>Peso:</strong> <span id="pokemonWeight"></span></p>
+            <p><strong>Habilidades:</strong> <span id="pokemonAbilities"></span></p>
+            <p><strong>Tipos:</strong> <span id="pokemonTypes"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
